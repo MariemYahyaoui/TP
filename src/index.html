@@ -1,13 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>TP2</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-  <app-root></app-root>
+    <form action="#" method="post">
+        <h2>Formulaire d'inscription</h2>
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <input type="submit" value="S'inscrire">
+    </form>
 </body>
 </html>
